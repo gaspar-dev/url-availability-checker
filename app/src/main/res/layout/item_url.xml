@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="viewModel"
+                  type="com.mind.coolest.url_checker.ui.main.model.URLItemModel"/>
+
+    </data>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/margin_10dp"
+            android:paddingBottom="@dimen/margin_10dp"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:layout_width="@dimen/all_size_50dp"
+                android:layout_height="@dimen/all_size_50dp"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:background="@drawable/ic_loading"
+                app:urlState="@{viewModel.urlState}"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_size_20sp"
+                android:text="@{viewModel.urlName}"
+                android:textColor="@color/color_black"/>
+    </LinearLayout>
+
+</layout>

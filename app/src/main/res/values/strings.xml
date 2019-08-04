@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Url Checker</string>
+    <string name="search_url">Search URL</string>
+    <string name="enter_url">Enter URL</string>
+    <string name="add_new">Add New</string>
+    <string name="sort_by_name">Sort By Name</string>
+    <string name="sort_by_availability">Sort by Availability</string>
+    <string name="sort_by_connection_time">Sort by Connection Time</string>
+</resources>

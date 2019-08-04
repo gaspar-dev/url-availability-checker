@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.main.dialog.UrlSortDialog">
+
+    <RadioGroup
+            android:id="@+id/rGroup_sort_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_20dp">
+
+        <RadioButton
+                android:id="@+id/rBtn_sort_byName"
+                android:layout_width="wrap_content"
+                android:checked="true"
+                android:text="@string/sort_by_name"
+                android:padding="@dimen/margin_20dp"
+                android:layout_height="wrap_content"/>
+        <RadioButton
+                android:id="@+id/rBtn_sort_byAvailability"
+                android:layout_width="wrap_content"
+                android:text="@string/sort_by_availability"
+                android:padding="@dimen/margin_20dp"
+                android:layout_height="wrap_content"/>
+        <RadioButton
+                android:id="@+id/rBtn_sort_byConnectionTime"
+                android:text="@string/sort_by_connection_time"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/margin_20dp"
+                android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+</RelativeLayout>
